@@ -12,22 +12,30 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#" id="data"></a></li>
+                <div class="row galleri" id="lista-mobile">
+                    <script id="lista-indice2" type="text/x-handlebars-template">
+                        {{#each musikita}}
+                        <div class="col-xs-4 hidden-sm hidden-md hidden-lg">
+                            <a href="javascript:;" id="{{categoria}}"><img src="{{cover}}" alt="{{categoria}}" title="{{categoria}}"/></a>
+                        </div>{{/each}}
+                    </script>
+                </div>
+
             </ul>
         </div>
     </div>
 </nav>
-<<<<
-<<<||<<<
+
 <section class="full-width">
     <div class="container">
         <div class="row">
 
             <!--  DISCOS  -->
             <div class="col-md-6">
-                <div class="row galleri" id="contenedor">
+                <div class="row galleri" id="lista-desktop">
                     <script id="lista-indice" type="text/x-handlebars-template">
                         {{#each musikita}}
-                        <div class="col-xs-4 col-sm-3 col-md-2">
+                        <div class="hidden-xs col-sm-3 col-md-2">
                             <a href="javascript:;" id="{{categoria}}"><img src="{{cover}}" alt="{{categoria}}" title="{{categoria}}"/></a>
                         </div>{{/each}}
                     </script>

@@ -8,25 +8,29 @@ $(document).ready(function ()
 
     // to call api
     $.getJSON("api-music.php", recorrido);
+
     function recorrido(data)
     {
         // print template lista-indice dentro de #contenedor pasandole data
-        origen = document.getElementById('lista-indice').innerHTML;
-        plantilla = Handlebars.compile(origen);
-        $('#contenedor').html(plantilla(data));
+        var origen = document.getElementById('lista-indice').innerHTML;
+        var plantilla = Handlebars.compile(origen);
+        $('#lista-desktop').html(plantilla(data));
+
+        var origen2 = document.getElementById('lista-indice2').innerHTML;
+        var plantilla2 = Handlebars.compile(origen2);
+        $('#lista-mobile').html(plantilla2(data));
 
 
         // usamos Jplayer
-        var myPlaylist = new jPlayerPlaylist(
-            {
+        var myPlaylist = new jPlayerPlaylist
+            ({
                 jPlayer: "#jquery_jplayer_1",
                 cssSelectorAncestor: "#jp_container_1"
             },
             data.musikita[$("img").attr('title')].music,
             //data.musikita.mejores.music,
             {
-                playlistOptions:
-                {
+                playlistOptions: {
                     autoPlay: true,
                     loopOnPrevious: false
                 },
@@ -50,6 +54,9 @@ $(document).ready(function ()
             myPlaylist.setPlaylist(data.musikita[$(this).attr('title')].music);
             //myPlaylist.setPlaylist(data.musikita.mejores.music);
         });
+
+
+
 
     }
 
