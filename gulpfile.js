@@ -8,21 +8,21 @@ var webserver = require('gulp-webserver');
 //guardo las rutas en un objeto
 var config = {
    styles: {
-      main: './twentyfifteen/css/*.sass',
-      watch: './twentyfifteen/css/*.css'
+      main: './app/css/*.sass',
+      watch: './app/css/*.css'
    },
    js: {
-      watch: './twentyfifteen/js/*.js'
+      watch: './app/js/*.js'
    },
    html: {
-      watch: './twentyfifteen/*.php'
+      watch: './app/*.php'
    }
 
 }
 
 //Tarea crear server con livereload
 gulp.task('server', function() {
-   gulp.src('./twentyfifteen')//carpeta server
+   gulp.src('./app')//carpeta server
       .pipe(webserver({
          host: '0.0.0.0',
          port: 8080,
