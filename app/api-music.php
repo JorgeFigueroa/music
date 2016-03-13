@@ -1,6 +1,6 @@
 <?php
     /* read folder create api for categori music */
-    $dir = "music/";
+    $dir = "musica/";
     if ($dh = opendir($dir))
     {
         $blackList = array( '.', '..', '.DS_Store' );  // lista nera

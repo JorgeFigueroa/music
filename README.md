@@ -20,7 +20,3 @@ http://jplayer.org/latest/developer-guide/
 http://php.net/manual/en/function.json-encode.php
 
 http://getbootstrap.com/css/
-
-ljklklkl
-prova
-√√√√ß
