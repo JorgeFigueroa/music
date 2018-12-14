@@ -8,11 +8,7 @@ npm install
 gulp
 ```
 
-###Ide
 
-https://www.sourcetreeapp.com/
-
-https://www.jetbrains.com/phpstorm/download/
 
 ###Documentation
 http://jplayer.org/latest/developer-guide/
