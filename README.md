@@ -2,7 +2,7 @@
 create folder music and insert folder for categori 
 ###https://api-music-2020.herokuapp.com/
 
-###Terminal
+## Terminal
 ```
 npm install
 gulp
@@ -10,7 +10,7 @@ gulp
 
 
 
-###Documentation
+## Documentation
 http://jplayer.org/latest/developer-guide/
 
 http://php.net/manual/en/function.json-encode.php
@@ -19,7 +19,7 @@ http://getbootstrap.com/css/
 
 
 
-###OBJETIVO
+## OBJETIVO
 dovrebe fare il rezise delle immagini con php
 fare un insert nell db di ogni categoria e ogni categorie le loro canzone e img
 
