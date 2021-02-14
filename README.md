@@ -1,5 +1,5 @@
 # Music-api folder and category
-create folder music and insert folder for categori 
+create folder music and insert folder for category
 ## https://api-music-2020.herokuapp.com/
 
 ## Terminal
